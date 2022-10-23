@@ -38,7 +38,7 @@
                 </ul>
               </li>
             </ul>
-            <div class="page-title"><span>看板</span></div>
+            <div class="page-title"></div>
             <ul class="nav navbar-nav navbar-right be-icons-nav">
               <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
@@ -132,7 +132,7 @@
             </li>
             <li class="parent"><a href="#"><i class="icon mdi mdi-dot-circle"></i><span>中间件</span></a>
               <ul class="sub-menu">
-                <li class="active"><a href="route-index.html">中间件</a>
+                <li class="active"><a href="middleware-create.html">创建中间件</a>
                 </li>
               </ul>
             </li>
@@ -237,7 +237,7 @@
                   <li>MySQL 是一种关系型数据库管理系统，关系数据库将数据保存在不同的表中，这样就增加了速度并提高了灵活性。
                   </li>
                   <li></li>
-                </ul><a href="#" class="btn btn-primary">开始创建</a>
+                </ul><a href="middleware-create-mysql.html" class="btn btn-primary">开始创建</a>
               </div>
             </div>
             <div class="col-md-3">
@@ -496,7 +496,7 @@
          
       $.ajax({
           type:"get",
-          url:"http://127.0.0.1:8080/routeApi/",
+          url:"http://127.0.0.1:8080/middlewareApi/",
           success: function(data){
             console.log(data);
             $("#table-data").html("");
