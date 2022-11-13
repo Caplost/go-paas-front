@@ -204,7 +204,7 @@
 -->
       <div class="be-content">
         <div class="page-head">
-          <h2 class="page-head-title">权限管理</h2>
+          <h2 class="page-head-title">角色管理</h2>
           <ol class="breadcrumb page-head-nav">
             <li><a href="#">控制台</a></li>
             <li><a href="#">权限管理</a></li>
@@ -217,141 +217,46 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="panel panel-default panel-border-color panel-border-color-primary">
-                  <div class="panel-heading panel-heading-divider">权限设置<span class="panel-subtitle">分配系统详细的权限</span></div>
+                  <div class="panel-heading panel-heading-divider">角色管理<span class="panel-subtitle">分配系统详细的权限</span></div>
                   <div class="panel-body">
-                    <form action="#" class="form-horizontal group-border-dashed" novalidate="">
+                    <form action="http://127.0.0.1:8080/userApi/AddRole" class="form-horizontal group-border-dashed" method="post" novalidate="">
                       <div class="form-group">
-                        <label class="col-sm-3 control-label">应用管理</label>
+                        <label class="col-sm-3 control-label">用户ID</label>
                         <div class="col-sm-6">
                           <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check6" type="checkbox" checked="">
-                            <label for="check6">应用创建</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-danger inline">
-                            <input id="check7" type="checkbox">
-                            <label for="check7">应用删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success inline">
-                            <input id="check8" type="checkbox">
-                            <label for="check8">应用查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-warning inline">
-                            <input id="check9" type="checkbox">
-                            <label for="check9">应用续费</label>
+                            <input id="check6" type="text" checked="" hidden value="1" name="user_id">
+                            <label for="check6">张三</label>
                           </div>
                         </div>
-
                       </div>
                       <div class="form-group">
-                        <label class="col-sm-3 control-label">服务管理</label>
+                        <label class="col-sm-3 control-label">角色</label>
                         <div class="col-sm-6">
                           <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check26" type="checkbox" checked="">
-                            <label for="check26">服务创建</label>
+                            <input id="check61" type="checkbox" value="1" name="role_id">
+                            <label for="check61">主管</label>
                           </div>
-                          <div class="be-checkbox be-checkbox-color  has-danger inline">
-                            <input id="check27" type="checkbox">
-                            <label for="check27">服务删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success  inline">
-                            <input id="check28" type="checkbox">
-                            <label for="check28">服务查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-warning inline">
-                            <input id="check29" type="checkbox">
-                            <label for="check29">应用续费</label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-3 control-label">域名管理</label>
-                        <div class="col-sm-6">
                           <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check16" type="checkbox" checked="">
-                            <label for="check16">域名创建</label>
+                            <input id="check7" type="checkbox"    value="2" name="role_id">
+                            <label for="check7">组长</label>
                           </div>
-                          <div class="be-checkbox be-checkbox-color has-danger inline">
-                            <input id="check17" type="checkbox">
-                            <label for="check17">域名删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success  inline">
-                            <input id="check18" type="checkbox">
-                            <label for="check18">域名查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-warning inline">
-                            <input id="check19" type="checkbox">
-                            <label for="check19">域名续费</label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-3 control-label">云盘管理</label>
-                        <div class="col-sm-6">
                           <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check36" type="checkbox" checked="">
-                            <label for="check36">云盘创建</label>
+                            <input id="check8" type="checkbox"   value="3" name="role_id">
+                            <label for="check8">组员</label>
                           </div>
-                          <div class="be-checkbox be-checkbox-color has-danger inline">
-                            <input id="check37" type="checkbox">
-                            <label for="check37">云盘删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success  inline">
-                            <input id="check38" type="checkbox">
-                            <label for="check38">云盘查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color  has-warning inline">
-                            <input id="check39" type="checkbox">
-                            <label for="check39">云盘续费</label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-3 control-label">云应用市场</label>
-                        <div class="col-sm-6">
                           <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check46" type="checkbox" checked="">
-                            <label for="check46">云应用安装</label>
+                            <input id="check9" type="checkbox"   value="4" name="role_id">
+                            <label for="check9">访客</label>
                           </div>
-                          <div class="be-checkbox be-checkbox-color has-danger inline">
-                            <input id="check47" type="checkbox">
-                            <label for="check47">云应用删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success inline">
-                            <input id="check48" type="checkbox">
-                            <label for="check48">云市场查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-warning inline">
-                            <input id="check49" type="checkbox">
-                            <label for="check49">云市场搜索</label>
+                          <div class="form-group">
+                            <div class="col-sm-2 col-sm-10">
+                              <button type="submit" class="btn btn-space btn-primary">提交</button>
+                              <button class="btn btn-space btn-default">取消</button>
+                            </div>
                           </div>
                         </div>
-
                       </div>
-                      <div class="form-group">
-                        <label class="col-sm-3 control-label">中间件管理</label>
-                        <div class="col-sm-6">
-                          <div class="be-checkbox be-checkbox-color inline">
-                            <input id="check56" type="checkbox" checked="">
-                            <label for="check56">中间件创建</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-danger inline">
-                            <input id="check57" type="checkbox">
-                            <label for="check57">中间件删除</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-success inline">
-                            <input id="check58" type="checkbox">
-                            <label for="check58">中间件查看</label>
-                          </div>
-                          <div class="be-checkbox be-checkbox-color has-warning inline">
-                            <input id="check59" type="checkbox">
-                            <label for="check59">中间件续费</label>
-                          </div>
-                        </div>
 
-                      </div>
                     </form>
                   </div>
                 </div>
